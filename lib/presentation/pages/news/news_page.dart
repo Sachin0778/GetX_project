@@ -3,34 +3,32 @@ import 'package:get/get.dart';
 import '../../controllers/news_controller.dart';
 import '../../../domain/entities/news_entity.dart';
 
-class NewsPage extends StatelessWidget {
+class NewsPage extends GetView<NewsController> {
   const NewsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final NewsController newsController = Get.find<NewsController>();
-
     return Scaffold(
       body: Obx(() {
-        if (newsController.isLoading.value) {
+        if (controller.isLoading.value) {
           return const Center(
             child: CircularProgressIndicator(),
           );
         }
 
-        if (newsController.error.value.isNotEmpty) {
+        if (controller.error.value.isNotEmpty) {
           return Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  newsController.error.value,
+                  controller.error.value,
                   style: const TextStyle(color: Colors.red),
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 16),
                 ElevatedButton(
-                  onPressed: newsController.refreshNews,
+                  onPressed: controller.refreshNews,
                   child: Text('retry'.tr),
                 ),
               ],
@@ -38,19 +36,19 @@ class NewsPage extends StatelessWidget {
           );
         }
 
-        if (newsController.news.isEmpty) {
+        if (controller.news.isEmpty) {
           return Center(
             child: Text('no_news'.tr),
           );
         }
 
         return RefreshIndicator(
-          onRefresh: newsController.fetchNews,
+          onRefresh: controller.fetchNews,
           child: ListView.builder(
             padding: const EdgeInsets.all(16),
-            itemCount: newsController.news.length,
+            itemCount: controller.news.length,
             itemBuilder: (context, index) {
-              final news = newsController.news[index];
+              final news = controller.news[index];
               return NewsCard(news: news);
             },
           ),

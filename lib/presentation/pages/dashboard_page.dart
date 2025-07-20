@@ -8,6 +8,9 @@ import 'package:getx_basics/presentation/pages/news/news_page.dart';
 class DashboardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // Ensure news controller is available
+    Get.put(NewsController());
+    
     final AuthController authController = Get.find();
     return DefaultTabController(
       length: 4,

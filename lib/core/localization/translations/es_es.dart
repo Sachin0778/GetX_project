@@ -10,4 +10,9 @@ const Map<String, String> esES = {
   'welcome_home': '¡Bienvenido a la pestaña de inicio!',
   'no_user': 'Sin usuario',
   'name': 'Nombre',
+  'settings_tab': 'Pestaña de configuraciones (simulado)',
+  'news': 'Noticias',
+  'no_news': 'No hay noticias disponibles',
+  'retry': 'Reintentar',
+  'by': 'Por',
 }; 

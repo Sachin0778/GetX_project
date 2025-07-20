@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_basics/config_prod.dart';
 import 'package:getx_basics/routes.dart';
-import 'presentation/bindings/auth_binding.dart';
+import 'presentation/controllers/auth_binding.dart';
 import 'core/localization/app_translations.dart';
 import 'flavor_config.dart';
 

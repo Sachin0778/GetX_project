@@ -10,4 +10,9 @@ const Map<String, String> enUS = {
   'welcome_home': 'Welcome to the Home tab!',
   'no_user': 'No user',
   'name': 'Name',
+  'settings_tab': 'Settings tab (simulated)',
+  'news': 'News',
+  'no_news': 'No news available',
+  'retry': 'Retry',
+  'by': 'By',
 }; 

@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:getx_basics/presentation/bindings/auth_binding.dart';
+import 'package:getx_basics/presentation/controllers/auth_binding.dart';
 import 'package:getx_basics/presentation/pages/auth/login_page.dart';
 import 'package:getx_basics/presentation/pages/dashboard_page.dart';
 
