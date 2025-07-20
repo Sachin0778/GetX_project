@@ -1,0 +1,13 @@
+const Map<String, String> esES = {
+  'login': 'Iniciar sesión',
+  'email': 'Correo electrónico',
+  'password': 'Contraseña',
+  'dashboard': 'Tablero',
+  'logout': 'Cerrar sesión',
+  'home': 'Inicio',
+  'profile': 'Perfil',
+  'settings': 'Configuraciones',
+  'welcome_home': '¡Bienvenido a la pestaña de inicio!',
+  'no_user': 'Sin usuario',
+  'name': 'Nombre',
+}; 
