@@ -1,5 +1,5 @@
-import '../../domain/entities/news_entity.dart';
-import '../models/news_model.dart';
+import '../../../domain/entities/news_entity.dart';
+import '../../models/news_model.dart';
 
 class NewsRepositoryImpl {
   Future<List<NewsEntity>> getNews() async {

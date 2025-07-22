@@ -1,5 +1,5 @@
 import '../entities/news_entity.dart';
-import '../../data/repositories/news_repository_impl.dart';
+import '../../data/repositories/news/news_repository_impl.dart';
 
 class GetNewsUseCase {
   final NewsRepositoryImpl repository;

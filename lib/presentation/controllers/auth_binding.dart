@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import '../../data/repositories/auth_repository_impl.dart';
+import '../../data/repositories/auth/auth_repository_impl.dart';
 import '../../domain/usecases/auth_usecases.dart';
 import 'auth_controller.dart';
 import '../bindings/news_binding.dart';

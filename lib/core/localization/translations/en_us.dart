@@ -15,4 +15,5 @@ const Map<String, String> enUS = {
   'no_news': 'No news available',
   'retry': 'Retry',
   'by': 'By',
+  'voice': 'Voice',
 }; 

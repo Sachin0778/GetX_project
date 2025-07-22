@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 import '../../domain/entities/news_entity.dart';
 import '../../domain/usecases/news_usecases.dart';
-import '../../data/repositories/news_repository_impl.dart';
+import '../../data/repositories/news/news_repository_impl.dart';
 
 class NewsController extends GetxController {
   final GetNewsUseCase _getNewsUseCase = GetNewsUseCase(NewsRepositoryImpl());

@@ -15,4 +15,5 @@ const Map<String, String> esES = {
   'no_news': 'No hay noticias disponibles',
   'retry': 'Reintentar',
   'by': 'Por',
+  'voice': 'Voz',
 }; 

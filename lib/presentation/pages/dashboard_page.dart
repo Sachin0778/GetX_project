@@ -4,8 +4,10 @@ import 'package:getx_basics/core/localization/language_switcher.dart';
 import 'package:getx_basics/presentation/controllers/auth_controller.dart';
 import 'package:getx_basics/presentation/controllers/news_controller.dart';
 import 'package:getx_basics/presentation/pages/news/news_page.dart';
+import 'package:getx_basics/presentation/pages/voice/voice_page.dart';
 
 class DashboardPage extends StatelessWidget {
+  const DashboardPage({super.key});
   @override
   Widget build(BuildContext context) {
     // Ensure news controller is available
@@ -32,6 +34,7 @@ class DashboardPage extends StatelessWidget {
               Tab(text: 'home'.tr),
               Tab(text: 'profile'.tr),
               Tab(text: 'news'.tr),
+              Tab(text: 'voice'.tr),
               Tab(text: 'settings'.tr),
             ],
           ),
@@ -50,7 +53,8 @@ class DashboardPage extends StatelessWidget {
                           ],
                         ),
                 )), // Profile
-            const NewsPage(), // News
+            const NewsPage(),
+            const VoicePage(),
             Center(child: Text('settings_tab'.tr)), // Settings
           ],
         ),

@@ -4,6 +4,7 @@ import 'package:getx_basics/core/localization/language_switcher.dart';
 import '../../controllers/auth_controller.dart';
 
 class LoginPage extends StatelessWidget {
+  LoginPage({super.key});
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 

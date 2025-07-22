@@ -1,5 +1,5 @@
-import '../../domain/entities/user_entity.dart';
-import '../../domain/usecases/auth_usecases.dart';
+import '../../../domain/entities/user_entity.dart';
+import '../../../domain/usecases/auth_usecases.dart';
 
 class AuthRepositoryImpl implements AuthUseCase {
   UserEntity? _currentUser;
